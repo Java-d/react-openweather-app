@@ -7,7 +7,7 @@ import { initialState } from "../configuration/initialState";
 import { apiUrl, citiesUrl } from "../configuration/config";
 
 import HOC from "./hoc";
-import Loader from "./Loader/loader";
+import Loader from "../components/Loader/loader";
 
 class Weather extends Component {
     // setting initial state from config you can change it

@@ -1,8 +1,8 @@
 import React from "react";
 import bg from "../img/bg.jpg";
-import Details from "./details";
-import Form from "./form";
-import Error from "./error";
+import Details from "../components/details";
+import Form from "../components/form";
+import Error from "../components/error";
 
 const HOC = props => {
     return (
