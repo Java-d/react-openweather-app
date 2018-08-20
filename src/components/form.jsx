@@ -1,7 +1,7 @@
 import React from "react";
 import { Fa, Button } from "mdbreact/dist/mdbreact";
 
-import CitiesDropdown from "./cities-list";
+import CitiesDropdown from "./cities-list/cities-list";
 
 const Form = props => {
     return (

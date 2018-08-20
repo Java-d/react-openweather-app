@@ -9,7 +9,8 @@ export const initialState = {
         clouds: undefined,
         description: undefined,
         wind: undefined,
-        pressure: undefined
+        pressure: undefined,
+        icon: undefined
     },
     cities: [],
     currentCity: undefined,

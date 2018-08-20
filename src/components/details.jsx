@@ -7,7 +7,7 @@ const Details = props => {
         <div className="row">
             <div className="col-md-6">
                 <h1 className="display-1">{props.temperature} &#8451;</h1>
-                <WeatherIcon />
+                <WeatherIcon icon={props.icon} />
             </div>
             <div className="col-md-6">
                 <h3>

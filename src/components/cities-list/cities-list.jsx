@@ -1,4 +1,5 @@
 import React from "react";
+import "./cities-list.css";
 
 const CitiesDropdown = props => {
     return (

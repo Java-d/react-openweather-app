@@ -66,8 +66,10 @@ class Weather extends Component {
                 Object.assign(
                     {},
                     { ...this.state },
-                    { currentCity: e.target.value },
-                    { error: "Please select your city from cities list..." }
+                    {
+                        currentCity: undefined,
+                        error: "Please select your city from cities list..."
+                    }
                 )
             );
         }
@@ -100,7 +102,8 @@ class Weather extends Component {
                                         result.data.weather[0].description,
                                     clouds: result.data.clouds.all,
                                     wind: result.data.wind,
-                                    pressure: result.data.main.pressure
+                                    pressure: result.data.main.pressure,
+                                    icon: result.data.weather[0].icon
                                 },
                                 error: undefined
                             }

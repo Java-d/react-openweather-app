@@ -1,8 +1,17 @@
 import React from "react";
-import Sunny from "../img/sunny.svg";
 
 const WeatherIcon = props => {
-    return <img alt="" src={Sunny} height="128" />;
+    return (
+        <img
+            alt=""
+            src={
+                "https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/" +
+                props.icon +
+                ".png"
+            }
+            height="128"
+        />
+    );
 };
 
 export default WeatherIcon;
