@@ -1,10 +1,10 @@
 import React from "react";
 import bg from "../img/bg.jpg";
-import Details from "../components/details";
-import Form from "../components/form";
-import Error from "../components/error";
+import Details from "../components/Details/Details";
+import Form from "./Form";
+import Error from "./Error";
 
-const HOC = props => {
+const Layout = props => {
     return (
         <div className="row mb-5 mh-100">
             <div className="col-md-12">
@@ -16,7 +16,7 @@ const HOC = props => {
                 >
                     <div className="text-white text-center rgba-stylish-strong py-5 px-4">
                         <div className="py-5">
-                            <h1 className="display-2">WEATHER FORECAST</h1>
+                            <h1 className="h1">WEATHER FORECAST</h1>
                             <Form
                                 getWheather={props.getWheather}
                                 onCityChange={props.onCityChange}
@@ -37,4 +37,4 @@ const HOC = props => {
     );
 };
 
-export default HOC;
+export default Layout;
